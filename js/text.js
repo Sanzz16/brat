@@ -38,6 +38,13 @@ function adjustTextSize() {
 }
 
 function updateText() {
+	const input = document.getElementById("textInput").value;
+	const text = document.getElementById("text");
+
+	text.textContent = input || "brat";
+}
+
+function updateText() {
     const textInput = document.getElementById("textInput");
     const text = document.getElementById("text");
 
